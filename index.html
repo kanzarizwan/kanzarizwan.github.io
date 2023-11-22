@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en" class="bg-success">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- You can add additional meta tags, links to stylesheets, or scripts in the head section -->
+</head>
+<div class="vertical-rectangle">
+    <div class="circle-container">
+        <img src="./assets/Kanza Rizwan-image.jpeg" alt="Profile">
+    </div>
+    <nav class="page-headings">
+        <div class="page-headings">
+            <a class="page-link" href="#education">Education</a>
+        </div>
+        <div class="page-headings">
+            <a class="page-link" href="#skills">Technical Skills</a>
+        </div>
+        <div class="page-headings">
+            <a class="page-link" href="#work">Work Experience</a>
+        </div>
+        <div class="page-headings">
+            <a class="page-link" href="#projects">Projects</a>
+        </div>
+        <div class="page-headings">
+            <a class="page-link" href="#additional-experience">Additional Experience</a>
+        </div>
+        <div class="page-headings">
+            <a class="page-link" href="#awards">Awards</a>
+        </div>
+
+    </nav>
+</div>
+
+<body class="scrolling">
+
+    <header>
+        <h1 class="name">KANZA RIZWAN <p class="contact-icons-container">
+                <a href="mailto:kanza.rizwan@mail.utoronto.ca">
+                    <img class="contact-icon" src="./assets/emailicon.png" alt="Email">
+                </a>
+
+                <a href="https://github.com/kanzarizwan/" target="_blank">
+                    <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                </a>
+
+                <a href="https://www.linkedin.com/in/kanza-rizwan" target="_blank">
+                    <img class="contact-icon" src="./assets/linkedinicon.png" alt="LinkedIn">
+                </a>
+            </p>
+        </h1>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <p>Hey, welcome to my portfolio! I'm Kanza, a final year Computer Science student at the University of
+                Toronto Mississauga. This curated showcase reflects my professional journey, skills, and projects. Dive
+                into the various sections to discover more about me, my work, and potential collaborations. Thank you
+                for visiting!</p>
+        </section>
+
+        <section id="education" class="details">
+            <h2 class="details-heading">Education</h2>
+            <p>Honours Bachelor of Science at the University of Toronto Mississauga <br>
+                Program of Study: Specialist in Computer Science Minor in Mathematical Sciences <br>
+                GPA: 3.40/4.0 <br>
+                Expected Graduation: June 2024 </p>
+            <div class="courses" onclick="showInfo('courses')">Relevant Courses</div>
+            <div class="overlay" id="courses" onclick="hideInfo('courses')">
+                <div class="info-content">
+                    <h2>Courses</h2>
+                    <ul>
+                        <li>Introduction to Information Security </li>
+                        <li>Operating Systems</li>
+                        <li>Introduction to Artificial Intelligence</li>
+                        <li>Neural Networks and Deep Learning </li>
+                        <li>Introduction to Software Engineering</li>
+                        <li>Introduction to Databases</li>
+                        <li>Computational Complexity and Computability</li>
+                        <li>Computer Organization</li>
+                        <li>Algorithm Design and Analysis</li>
+                        <li>Introduction to Machine Learning</li>
+                        <li>Software Tools and Systems Programming</li>
+                        <li>Data Structures and Analysis </li>
+                        <li>Introduction to Computer Science </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="details">
+            <h2 class="details-heading">Technical Skills</h2>
+            <ul>
+                <li>Professional experience in developing, deploying and debugging serverless applications using
+                    AWS as a PEY intern at Evertz Microsystems
+                </li>
+                <li>
+                    Professional experience in web design and debugging as a web developer at UofT Engineering
+                    Work-Study
+                </li>
+                <li>
+                    Experience with several programming languages with Object Oriented features:
+                    Languages: Python, Java, C, Swift, JavaScript and HTML
+                </li>
+                <li>
+                    Avid user of various Operating Systems and software applications - both Open Source and
+                    commercial:
+                    O/S: iOS, Windows, Linux
+                </li>
+                <li>
+                    Applications: Microsoft Office Suite; Word, Power Point, Excel; Django, JavaFX, Xcode, Scratch
+                </li>
+                <li>
+                    Proficient with the git version control system, SQL, Numpy and Latex
+
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="work" class="details">
+            <h2 class="details-heading">Work Experience</h2>
+            <h3> Student Software Engineering - Evertz Microsystems Ltd <br>
+                PEY May 2022 - Aug 2023</h3>
+            <ul>
+                <li>Demonstrated strong analytical and problem-solving skills</li>
+                <li>Worked with the back-end team on building features for customers using Amazon Web Services</li>
+                <li>Assisted in the development of website features, resolved technical support requests, and provided
+                    beneficial advice and support to colleagues on any IT-related issues</li>
+                <li>Solved multiple issues regarding authentication, security vulnerabilities, observability, backups,
+                    websocket infrastructure, etc., and often led presentations to help communicate and improve
+                    everyone’s understanding</li>
+            </ul>
+            <h3> IT Support, Web Designer/Developer - University of Toronto Engineering Work Study <br>
+                Oct 2021 - April 2022</h3>
+            <ul>
+                <li>Demonstrated strong problem solving, database management and organisational skills with
+                    expertise in programming and coding</li>
+                <li>Developing an extension for the student portal at UofT, Quercus, that will present a different
+                    approach to grading of courses for instructors and students</li>
+                <li>Developed the website and generated databases using the open source Python framework,
+                    Django and JQuery</li>
+            </ul>
+
+        </section>
+
+        <section id="projects" class="details">
+            <h2 class="details-heading">Projects</h2>
+
+            <div class="grid-container">
+                <!-- Grid items (divs) -->
+                <div class="grid-item" onclick="showInfo('PacMan')">
+                    <img class="icon" src="./assets/pacman.png" alt="PacMan">
+                </div>
+                <div class="grid-item" onclick="showInfo('Othello-Game')">
+                    <img class="icon" src="./assets/othello.png" alt="Othello-Game">
+                </div>
+                <div class="grid-item" onclick="showInfo('Futoshiki')">
+                    <img class="icon" src="./assets/rules_futoshiki_inequality.png" alt="Futoshiki">
+                </div>
+                <div class="grid-item" onclick="showInfo('Calculator')">
+                    <img class="icon" src="./assets/calculator.png" alt="Calculator">
+                </div>
+                <div class="grid-item" onclick="showInfo('TodoList')">
+                    <img class="icon" src="./assets/todolist.png" alt="TodoList">
+                </div>
+                <div class="grid-item" onclick="showInfo('SmartKart')">
+                    <img class="icon" src="./assets/smartkart.png" alt="SmartKart">
+                </div>
+                <div class="grid-item" onclick="showInfo('Synchronization')">
+                    <img class="icon" src="./assets/synchronisation.png" alt="Synchronization">
+                </div>
+                <div class="grid-item" onclick="showInfo('QuadTree')">
+                    <img class="icon" src="./assets/quadtree.png" alt="QuadTree">
+                </div>
+                <div class="grid-item" onclick="showInfo('Microservices')">
+                    <img class="icon" src="./assets/microservices.png" alt="Microservices">
+                </div>
+                <div class="grid-item" onclick="showInfo('Meepo')">
+                    <img class="icon" src="./assets/meepo.png" alt="Meepo">
+                </div>
+                <div class="grid-item" onclick="showInfo('SIMFS')">
+                    <img class="icon" src="./assets/simfs.png" alt="SIMFS">
+                </div>
+            </div>
+
+            <div class="overlay" id="PacMan" onclick="hideInfo('PacMan')">
+                <div class="info-content">
+                    <h2>PacMan Search Agent</h2>
+                    <a href="https://gitfront.io/r/kanzarizwan/w7cwr4h25M6n/PacMan/" target="_blank">
+                        <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <h3>Project Overview:</h3>
+                    <ul>
+                        <li>Developed a PacMan game using Python.</li>
+                        <li>Implemented search techniques for Pacman navigation through the maze.</li>
+                    </ul>
+
+                    <h3>Coding Language:</h3>
+                    <ul>
+                        <li>Python</li>
+                    </ul>
+
+                    <h3>Search Techniques:</h3>
+                    <ul>
+                        <li>Utilized Depth First Search, Breadth First Search, Uniform-Cost Search, and A* Search
+                            algorithms.</li>
+                        <li>Addressed specific challenges such as finding corners, implementing heuristics, and
+                            optimizing dot consumption.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="overlay" id="Othello-Game" onclick="hideInfo('Othello-Game')">
+                <div class="info-content">
+                    <h2>Othello Game</h2>
+                    <a href="https://gitfront.io/r/kanzarizwan/w7cwr4h25M6n/PacMan/" target="_blank">
+                        <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <h3>Objective:</h3>
+                    <ul>
+                        <li>Implementation of an Othello (Reversi) game-playing agent for a Columbia University AI
+                            course.</li>
+                        <li>Utilizes various algorithms and custom heuristics for strategic gameplay.</li>
+                    </ul>
+
+                    <h3>Coding Language:</h3>
+                    <ul>
+                        <li>Python</li>
+                    </ul>
+
+                    <h3>Algorithms Implemented:</h3>
+                    <ul>
+                        <li>Minimax for 4x4 boards</li>
+                        <li>Alpha-Beta Pruning</li>
+                        <li>Depth Limit for faster agents</li>
+                        <li>Caching States and Node Ordering Heuristic for optimization</li>
+                    </ul>
+
+                    <h3>Custom Heuristic:</h3>
+                    <ul>
+                        <li>Enhances decision-making with considerations for stable board locations, available moves,
+                            and strategic phases.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay" id="Futoshiki" onclick="hideInfo('Futoshiki')">
+                <div class="info-content">
+                    <h2>Futoshiki Game</h2>
+                    <a href="https://gitfront.io/r/kanzarizwan/TmknRZVrCuuh/Futoshiki/" target="_blank">
+                         <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <h3>Objective:</h3>
+                    <ul>
+                        <li>Implementation of a Futoshiki CSP Solver with two constraint propagators (Forward
+                            Checking and Generalized Arc Consistency) and two CSP models.</li>
+                        <li><strong>Coding Language:</strong> Python</li>
+                    </ul>
+
+                    <h3>Propagators:</h3>
+                    <ul>
+                        <li>Forward Checking (FC) for pruning constraints with exactly one uninstantiated variable.
+                        </li>
+                        <li>Generalized Arc Consistency (GAC) for enforcing constraints.</li>
+                        <li>Minimum Remaining Values (MRV) heuristic for variable ordering.</li>
+                    </ul>
+
+                    <h3>Futoshiki Models:</h3>
+                    <ul>
+                        <li>Model 1: Uses binary not-equal constraints for row, column, and inequality constraints.
+                        </li>
+                        <li>Model 2: Uses n-ary all-different constraints for row and column constraints, along with
+                            binary inequality constraints.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="overlay" id="Calculator" onclick="hideInfo('Calculator')">
+                <div class="info-content">
+                    <h2>Calculator</h2>
+                    <a href="https://gitfront.io/r/kanzarizwan/HP86uGwSqwei/React-TS-Calculator/" target="_blank">
+                         <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <h3>Description:</h3>
+                    <ul>
+                        <li>Simple calculator built using React 18 with TypeScript.</li>
+                        <li>Performs basic calculations: addition, subtraction, multiplication, and division.</li>
+                    </ul>
+
+                    <h3>Technologies:</h3>
+                    <ul>
+                        <li><strong>React 18</strong></li>
+                        <li><strong>TypeScript</strong></li>
+                    </ul>
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Supports multiple values for calculations.</li>
+                        <li>Displays the calculated result on the interface.</li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="overlay" id="TodoList" onclick="hideInfo('TodoList')">
+                <div class="info-content">
+                    <h2>Daily To Do List</h2>
+                    <a href="https://gitfront.io/r/kanzarizwan/SbWaZjkG4bXX/Daily-To-Do-List/" target="_blank">
+                         <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <h3>Project Overview:</h3>
+                    <ul>
+                        <li>Developed a Daily To-Do List Tracker using React, JavaScript, HTML, and CSS.</li>
+                        <li>Employed Bootstrap for consistent and responsive styling across various components.</li>
+                    </ul>
+
+                    <h3>Setup and Installation:</h3>
+                    <ul>
+                        <li>Users can personalize the application by entering their name and task list date during
+                            setup.</li>
+                        <li>Utilizes Node.js and npm for seamless installation and development server initiation.</li>
+                    </ul>
+
+                    <h3>Task Management Features:</h3>
+                    <ul>
+                        <li>Allows users to add tasks with details such as name, description, and category selection.
+                        </li>
+                        <li>Supports dynamic task organization and completion tracking within different categories.</li>
+                    </ul>
+
+                    <h3>User-Friendly Interface:</h3>
+                    <ul>
+                        <li>Responsive design ensures an intuitive and visually appealing experience for effective task
+                            management.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="overlay" id="SmartKart" onclick="hideInfo('SmartKart')">
+                <div class="info-content">
+                    <h2>SmartKart: Cost-Optimizing Grocery Companion</h2>
+                    <a href=" https://gitfront.io/r/kanzarizwan/4z5ubcriKX5i/SmartKart/" target="_blank">
+                         <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <p>Developed as a team project, fostering collaboration and diverse contributions.</p>
+
+                    <h3>Motivation:</h3>
+                    <p>The goal of this team project is to allow shoppers to buy the groceries they need at the store
+                        that gives them the lowest aggregate cost for their cart.</p>
+
+                    <h3>Dependencies</h3>
+
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>ReactJS</li>
+                    </ul>
+
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>Flask</li>
+                    </ul>
+
+                    <h4>Database</h4>
+                    <ul>
+                        <li>MySQL</li>
+                    </ul>
+
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Users can add items to a virtual cart and compare prices across multiple grocery stores.
+                        </li>
+                        <li>The app provides an optimized shopping trip by suggesting the store with the lowest
+                            aggregate cost.</li>
+                        <li>Users can view flyers, deals, and historical prices to make informed decisions.</li>
+                        <li>Transportation costs are factored in, allowing users to choose the most cost-effective
+                            shopping option.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay" id="Synchronization" onclick="hideInfo('Synchronization')">
+                <div class="info-content">
+                    <h2>Synchronization</h2>
+                    <a href=" https://gitfront.io/r/kanzarizwan/UbLojgx34EzX/Synchronization/" target="_blank">
+                         <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <h3>1. Framework and Language:</h3>
+                    <ul>
+                        <li><strong>Language:</strong> C</li>
+                        <li><strong>Framework:</strong> POSIX pthreads</li>
+                    </ul>
+
+                    <h3>2. Key Features:</h3>
+                    <ul>
+                        <li><strong>Job Scheduling and Execution:</strong> Implements a job scheduling and execution
+                            system using synchronization primitives in user mode programming.</li>
+                        <li><strong>Admission Queues:</strong> Manages incoming jobs using admission queues, where each
+                            job type determines the corresponding queue.</li>
+                        <li><strong>Resource Handling:</strong> Ensures exclusive access to resources for each job
+                            before execution, preventing conflicts and ensuring correct resource usage.</li>
+                        <li><strong>Processor Assignment:</strong> Assigns jobs to specific processors based on a static
+                            processor assignment policy.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay" id="QuadTree" onclick="hideInfo('QuadTree')">
+                <div class="info-content">
+                    <h2>QuadTree Image Compression Decompression</h2>
+                    <a href="https://gitfront.io/r/kanzarizwan/BYTp5d2tqsw3/QuadTree-Compression-Decompression/"
+                        target="_blank">
+                         <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <ul>
+                        <li>
+                            <h3>Language: Python</h3>
+                        </li>
+
+                        <li>
+                            <h3>Framework: Custom QuadTree Implementation</h3>
+                            <p>The core framework involves a custom implementation of a QuadTree, a tree data structure
+                                widely used in computer graphics for efficient image compression and decomposition.</p>
+                        </li>
+
+                        <li>
+                            <h3>Lossy Compression with QuadTree</h3>
+                            <p>The project features lossy image compression using a QuadTree data structure, allowing
+                                users to balance image quality and file size. The QuadTree represents an image by
+                                recursively dividing it into quadrants.</p>
+                        </li>
+
+                        <li>
+                            <h3>File I/O for BMP and QDT Formats</h3>
+                            <p>The project includes a File I/O module for reading and writing images in BMP (Bitmap) and
+                                QDT (Quadtree) formats. This module allows seamless integration with both compressed and
+                                uncompressed image files.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay" id="Microservices" onclick="hideInfo('Microservices')">
+                <div class="info-content">
+                    <h2>Zoomer (Microservices) </h2>
+                    <a href="https://gitfront.io/r/kanzarizwan/t7fVt5mcYSdF/Zoomer/" target="_blank">
+                         <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+                    <p>
+                        A revolutionary ride-sharing web app called Zoomer. As the CTO, the goal is to implement a
+                        microservices architecture in Java using PostgreSQL, MongoDB, and Neo4J databases, along with an
+                        API Gateway, to efficiently manage ride requests and matches.
+                    </p>
+                    <ul>
+                        <li>
+                            <h3>Language: Java</h3>
+                        </li>
+                        <li>
+                            <h3>Databases:</h3>
+                            <ul>
+                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
+                                <li>Neo4J</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Microservices Architecture:</h3>
+                            <p>Implemented as a microservices architecture with three backend APIs.</p>
+                            <p>Services interact with PostgreSQL, MongoDB, and Neo4J databases.</p>
+                        </li>
+
+                        <li>
+                            <h3>Containerization:</h3>
+                            <p>Docker is employed to containerize the entire application.</p>
+                            <p>Ensures consistent and reproducible deployment across different environments.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay" id="Meepo" onclick="hideInfo('Meepo')">
+                <div class="info-content">
+                    <h2>Meeop Game</h2>
+                    <a href="https://github.com/kanzarizwan/Meepo-Game" target="_blank">
+                         <img class="contact-icon" src="./assets/githubicon.png" alt="GitHub">
+                    </a>
+
+                    <ul>
+                        <li><strong>Language:</strong> Python</li>
+                        <li><strong>Framework:</strong> Pygame</li>
+                        <li><strong>Features:</strong>
+                            <ul>
+                                <li>Single-player game where the user manipulates blocks to modify game instructions.
+                                </li>
+                                <li>Dynamic conditions and interactions controlled by shifting blocks on the game board.
+                                </li>
+                                <li>Player can set characters, win/lose conditions, and other game rules through block
+                                    movements.</li>
+                                <li>Uses Pygame library for game development, providing a visually interactive
+                                    experience.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="overlay" id="SIMFS" onclick="hideInfo('SIMFS')">
+                <div class="info-content">
+                    <h2> EXT2 Filesystem</h2>
+                    <p>Work in progress</p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section id="additional-experience" class="details">
+            <h2 class="details-heading">Additional Experience</h2>
+            <h3> Assistant Event Head- Karachi Grammar Science Olympiad <br>
+                Dec. 2017 - Feb. 2018 </h3>
+            <ul>
+                <li>Collaborated with a team of 4 students to organise a Computer Science and Robotics based
+                    module for a national level Olympiad, KGSO</li>
+                <li>Devised rounds for the module which included projects from Scratch, LightBot and robot
+                    construction</li>
+                <li>Guided over 50 participants in the module regarding their queries related to the tasks</li>
+            </ul>
+
+            <h3> Student Researcher - Alchemy Technologies <br>
+                Aug. 2017 - Sept. 2017</h3>
+            <ul>
+                <li>Managed a research based project on Oil Consumption revolving around energy resources
+                    and their conservation in North America.</li>
+                <li>Developed fact sheets, data tables and graphs to summarise research on types of vehicles,
+                    their fuel consumption and giving an analysis on future prospects of renewable energy
+                    resources</li>
+            </ul>
+
+        </section>
+
+        </section>
+
+        <section id="awards" class="details">
+            <h2 class="details-heading">Awards</h2>
+
+            <ul>
+                <li>Winning team of the Hackathon for Science Education 2020 held by Pueblo Science; built a
+                    prototype science kit addressing the UN sustainability goals for students in low-resource
+                    communities of Philippines</li>
+                <li>Entry Scholarship Award for Admission in UTM ($2000)</li>
+                <li>Winning team of Pakistan Science Club Water Rocket Competition (Hobbyist Category).</li>
+                <li>Runner-up team in PSIFI VI held by LUMS ( National Level Science Olympiad ) for a
+                    Computer Science based module, Tech-wars which hosted 12 teams</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+        <!-- You can add footer content or links here -->
+    </footer>
+
+</body>
+
+<script>
+    // Function to show the information overlay
+    function showInfo(assignment) {
+        document.getElementById(assignment).style.display = "flex";
+    }
+
+    // Function to hide the information overlay
+    function hideInfo(assignment) {
+        document.getElementById(assignment).style.display = "none";
+    }
+</script>
+
+</html>
