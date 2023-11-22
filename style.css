@@ -10,39 +10,46 @@
 
 .circle-container img {
     display: block;
-    width: 100%; /* Make the image fill the circular container */
+    width: 100%;
+    /* Make the image fill the circular container */
     border-radius: 50%;
 }
 
 .bg-success {
-    background-color: rgba(255, 255, 255, 0.87); /* This is a Bootstrap success color, you can change it as needed */
+    background-color: rgba(255, 255, 255, 0.87);
+    /* This is a Bootstrap success color, you can change it as needed */
     color: rgb(24, 36, 86);
     margin-left: 30%;
 }
 
 .scrolling {
-    overflow-y: scroll; /* Add a vertical scrollbar */
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    margin-right: 10%; /* Remove default margin */
-}
-header {
-    display: flex;
-    align-self: left; /* Optional: Align items vertically in the center */
+    overflow-y: scroll;
+    /* Add a vertical scrollbar */
+    height: 100vh;
+    /* Set the height to 100% of the viewport height */
+    margin-right: 10%;
+    /* Remove default margin */
 }
 
-.name{
+header {
+    display: flex;
+    align-self: left;
+    /* Optional: Align items vertically in the center */
+}
+
+.name {
     display: flex;
     font: 'Saira Extra Condensed', serif;
     font-size: 50pt;
     text-align: left;
     padding-top: 5%;
-    color:  rgb(24, 36, 86);
+    color: rgb(24, 36, 86);
     font-weight: bolder;
 
 }
 
 /* Add additional styles or modify existing styles as needed */
-.vertical-rectangle{
+.vertical-rectangle {
     text-align: center;
     position: fixed;
     top: 0;
@@ -53,20 +60,20 @@ header {
     height: 100vh;
     background-color: rgb(24, 36, 86);
 
-  }
+}
 
-  .page-link{
+.page-link {
     text-decoration: none;
     color: white;
-  }
+}
 
-  .page-headings {
+.page-headings {
     margin-top: 20pt;
     font: 1em sans-serif;
     font-size: large;
-  }
+}
 
-.about{
+.about {
     margin-top: -10%;
     font: 1em sans-serif;
     font-size: large;
@@ -74,7 +81,7 @@ header {
     font-weight: 100;
 }
 
-.details{
+.details {
     font: 1em sans-serif;
     font-size: large;
     color: rgb(24, 36, 86);
@@ -92,7 +99,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
     justify-content: center;
     align-items: center;
 }
@@ -119,17 +127,21 @@ header {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-    gap: 20px; /* Gap between grid items */
+    grid-template-columns: repeat(3, 1fr);
+    /* Three equal-width columns */
+    gap: 20px;
+    /* Gap between grid items */
 }
 
 /* Style for grid items (divs) */
 .grid-item {
     padding: 20px;
     border-radius: 5px;
-    color: #fff; /* Example text color */
+    color: #fff;
+    /* Example text color */
     text-align: center;
 }
+
 .contact-icons-container {
     margin-top: 10px;
     display: flex;
@@ -149,4 +161,14 @@ header {
 .courses {
     font-weight: bold;
     cursor: pointer;
+}
+.project-header{
+    display: flex;
+    margin-top: 10pt;
+
+}
+.github-link {
+    width: 30pt;
+    margin-top: 10pt;
+    margin-left: 10pt;
 }
